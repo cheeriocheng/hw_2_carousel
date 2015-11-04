@@ -14,6 +14,8 @@
 		DC2359B41BEA827D004D57E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC2359B21BEA827D004D57E6 /* LaunchScreen.storyboard */; };
 		DC2359BF1BEA827E004D57E6 /* cp_2_carouselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2359BE1BEA827E004D57E6 /* cp_2_carouselTests.swift */; };
 		DC2359CA1BEA827E004D57E6 /* cp_2_carouselUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2359C91BEA827E004D57E6 /* cp_2_carouselUITests.swift */; };
+		DC2359D81BEA8595004D57E6 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2359D71BEA8595004D57E6 /* Common.swift */; };
+		DC2359DD1BEA92AB004D57E6 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2359DC1BEA92AB004D57E6 /* IntroViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		DC2359C51BEA827E004D57E6 /* cp_2_carouselUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cp_2_carouselUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC2359C91BEA827E004D57E6 /* cp_2_carouselUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cp_2_carouselUITests.swift; sourceTree = "<group>"; };
 		DC2359CB1BEA827E004D57E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC2359D71BEA8595004D57E6 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = ../Common.swift; sourceTree = "<group>"; };
+		DC2359DC1BEA92AB004D57E6 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		DC2359A81BEA827D004D57E6 /* cp_2_carousel */ = {
 			isa = PBXGroup;
 			children = (
+				DC2359D71BEA8595004D57E6 /* Common.swift */,
+				DC2359DB1BEA9256004D57E6 /* ViewController */,
 				DC2359A91BEA827D004D57E6 /* AppDelegate.swift */,
 				DC2359AB1BEA827D004D57E6 /* ViewController.swift */,
 				DC2359AD1BEA827D004D57E6 /* Main.storyboard */,
@@ -123,6 +129,14 @@
 				DC2359CB1BEA827E004D57E6 /* Info.plist */,
 			);
 			path = cp_2_carouselUITests;
+			sourceTree = "<group>";
+		};
+		DC2359DB1BEA9256004D57E6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DC2359DC1BEA92AB004D57E6 /* IntroViewController.swift */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC2359AC1BEA827D004D57E6 /* ViewController.swift in Sources */,
+				DC2359D81BEA8595004D57E6 /* Common.swift in Sources */,
 				DC2359AA1BEA827D004D57E6 /* AppDelegate.swift in Sources */,
+				DC2359DD1BEA92AB004D57E6 /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

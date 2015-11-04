@@ -8,10 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+     // IntroScrollView.contentSize = CGSize(width: 320 , height: 1136)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
