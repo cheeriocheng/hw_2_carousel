@@ -131,14 +131,17 @@
                                                 <rect key="frame" x="0.0" y="8" width="320" height="104"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="s2o-nY-fjd">
-                                                <rect key="frame" x="15" y="18" width="290" height="56"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </button>
                                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" id="ctO-IV-J6r">
                                                 <rect key="frame" x="262" y="36" width="20" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </activityIndicatorView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="s2o-nY-fjd">
+                                                <rect key="frame" x="15" y="18" width="290" height="56"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="onLogInButtonPressed:" destination="s89-iM-YU3" eventType="touchUpInside" id="FwH-I5-ycu"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
@@ -154,7 +157,11 @@
                     <navigationItem key="navigationItem" id="qD7-JR-df0"/>
                     <connections>
                         <outlet property="buttonView" destination="jXb-Md-Z00" id="oRM-5z-18X"/>
+                        <outlet property="emailTextField" destination="5Mq-DX-AMW" id="H2x-Cb-JmG"/>
                         <outlet property="fieldView" destination="QPJ-2t-PO9" id="eqL-Xj-PF9"/>
+                        <outlet property="loadingActivityIndicatorView" destination="ctO-IV-J6r" id="SEm-7h-Md8"/>
+                        <outlet property="logInButton" destination="s2o-nY-fjd" id="GNS-Ga-Dp1"/>
+                        <outlet property="passwordTextField" destination="8ww-hF-3Hm" id="boX-SC-IOL"/>
                         <outlet property="scrollView" destination="7cM-jH-bjR" id="tM4-ba-orD"/>
                     </connections>
                 </viewController>
