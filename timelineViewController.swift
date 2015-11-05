@@ -1,5 +1,5 @@
 //
-//  welcomeViewController.swift
+//  timelineViewController.swift
 //  cp_2_carousel
 //
 //  Created by Xu, Cheng on 11/4/15.
@@ -8,35 +8,21 @@
 
 import UIKit
 
-class welcomeViewController: UIViewController {
-
-
+class timelineViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var pageControl: UIPageControl!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.contentSize = CGSize(width: 1280, height: 568)
-        
+        scrollView.contentSize = CGSize(width: 320, height: 1664)
 
+        // Do any additional setup after loading the view.
     }
 
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-//    
-//    func scrollViewDidEndDecelerating(scrollView: UIScrollView!) {
-//        // Get the current page based on the scroll offset
-//        let page : Int = Int(round(scrollView.contentOffset.x / 320))
-//        
-//        // Set the current page, so the dots will update
-//        pageControl.currentPage = page
-//        print(page)
-//    }
-//
-//    
+    
 
     /*
     // MARK: - Navigation

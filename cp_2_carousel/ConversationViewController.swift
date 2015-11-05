@@ -1,42 +1,31 @@
 //
-//  welcomeViewController.swift
+//  ConversationViewController.swift
 //  cp_2_carousel
 //
-//  Created by Xu, Cheng on 11/4/15.
+//  Created by Xu, Cheng on 11/5/15.
 //  Copyright © 2015 sansserif. All rights reserved.
 //
 
 import UIKit
 
-class welcomeViewController: UIViewController {
-
-
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var pageControl: UIPageControl!
+class ConversationViewController: UIViewController {
+    @IBOutlet weak var backButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.contentSize = CGSize(width: 1280, height: 568)
-        
 
+        // Do any additional setup after loading the view.
     }
 
-    
+    @IBAction func onClickBack(sender: AnyObject) {
+        navigationController?.popToRootViewControllerAnimated(true)
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-//    
-//    func scrollViewDidEndDecelerating(scrollView: UIScrollView!) {
-//        // Get the current page based on the scroll offset
-//        let page : Int = Int(round(scrollView.contentOffset.x / 320))
-//        
-//        // Set the current page, so the dots will update
-//        pageControl.currentPage = page
-//        print(page)
-//    }
-//
-//    
+    
 
     /*
     // MARK: - Navigation
