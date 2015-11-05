@@ -117,7 +117,7 @@
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="create_text" id="ANx-Vj-vLs" userLabel="login in text">
-                                                <rect key="frame" x="0.0" y="14" width="320" height="63"/>
+                                                <rect key="frame" x="0.0" y="19" width="320" height="63"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </imageView>
                                         </subviews>
@@ -153,6 +153,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="qD7-JR-df0"/>
                     <connections>
+                        <outlet property="buttonView" destination="jXb-Md-Z00" id="oRM-5z-18X"/>
+                        <outlet property="fieldView" destination="QPJ-2t-PO9" id="eqL-Xj-PF9"/>
                         <outlet property="scrollView" destination="7cM-jH-bjR" id="tM4-ba-orD"/>
                     </connections>
                 </viewController>

@@ -11,9 +11,24 @@ import UIKit
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var fieldView: UIView!
+    @IBOutlet weak var buttonView: UIView!
+
+    
+        var fieldInitialY: CGFloat!
+        var buttonInitialY: CGFloat!
+        var fieldDeltaY: CGFloat!
+        var buttonDeltaY:CGFloat!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        fieldInitialY = fieldView.frame.origin.y
+        fieldDeltaY = -110
+        buttonInitialY = buttonView.frame.origin.y
+        buttonDeltaY = -200
+        
        
         scrollView.contentSize = CGSize(width: 320, height: 600)
         
@@ -36,9 +51,19 @@ class LoginViewController: UIViewController {
     
     func keyboardWillShow(notification: NSNotification!) {
         
+        fieldView.frame.origin.y = fieldInitialY + fieldDeltaY
+        buttonView.frame.origin.y = buttonInitialY + buttonDeltaY
+        
+        
+        
+        
+        
     }
     
     func keyboardWillHide(notification: NSNotification!) {
+        fieldView.frame.origin.y = fieldInitialY
+        buttonView.frame.origin.y = buttonInitialY
+        
         
     }
 
