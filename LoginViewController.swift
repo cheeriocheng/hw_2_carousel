@@ -148,6 +148,13 @@ class LoginViewController: UIViewController {
 
     
    
+    @IBAction func onBackButton(sender: AnyObject) {
+       
+            
+            navigationController?.popToRootViewControllerAnimated(true)
+            
+       
+    }
     
 
     /*
