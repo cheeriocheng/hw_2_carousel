@@ -12,10 +12,13 @@ class IntroViewController: UIViewController {
 
     @IBOutlet var introScrollView: UIScrollView!
    
+    @IBOutlet weak var intro1UIImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         introScrollView.contentSize = CGSize(width: 320, height: 1136)
         // Do any additional setup after loading the view.
+        
+       
     }
 
     override func didReceiveMemoryWarning() {

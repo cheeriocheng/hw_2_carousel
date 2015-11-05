@@ -16,6 +16,7 @@
 		DC2359CA1BEA827E004D57E6 /* cp_2_carouselUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2359C91BEA827E004D57E6 /* cp_2_carouselUITests.swift */; };
 		DC2359D81BEA8595004D57E6 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2359D71BEA8595004D57E6 /* Common.swift */; };
 		DC2359DD1BEA92AB004D57E6 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2359DC1BEA92AB004D57E6 /* IntroViewController.swift */; };
+		DCD0BA651BEAE81F0052F02B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0BA641BEAE81F0052F02B /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		DC2359CB1BEA827E004D57E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC2359D71BEA8595004D57E6 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = ../Common.swift; sourceTree = "<group>"; };
 		DC2359DC1BEA92AB004D57E6 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		DCD0BA641BEAE81F0052F02B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				DC2359A91BEA827D004D57E6 /* AppDelegate.swift */,
 				DC2359AB1BEA827D004D57E6 /* ViewController.swift */,
 				DC2359AD1BEA827D004D57E6 /* Main.storyboard */,
+				DCD0BA641BEAE81F0052F02B /* LoginViewController.swift */,
 				DC2359B01BEA827D004D57E6 /* Assets.xcassets */,
 				DC2359B21BEA827D004D57E6 /* LaunchScreen.storyboard */,
 				DC2359B51BEA827E004D57E6 /* Info.plist */,
@@ -276,6 +279,7 @@
 				DC2359AC1BEA827D004D57E6 /* ViewController.swift in Sources */,
 				DC2359D81BEA8595004D57E6 /* Common.swift in Sources */,
 				DC2359AA1BEA827D004D57E6 /* AppDelegate.swift in Sources */,
+				DCD0BA651BEAE81F0052F02B /* LoginViewController.swift in Sources */,
 				DC2359DD1BEA92AB004D57E6 /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,6 +505,7 @@
 				DC2359D01BEA827E004D57E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC2359D11BEA827E004D57E6 /* Build configuration list for PBXNativeTarget "cp_2_carouselTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +514,7 @@
 				DC2359D31BEA827E004D57E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC2359D41BEA827E004D57E6 /* Build configuration list for PBXNativeTarget "cp_2_carouselUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +523,7 @@
 				DC2359D61BEA827E004D57E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
