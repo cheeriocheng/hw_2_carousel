@@ -92,7 +92,7 @@ class LoginViewController: UIViewController {
     func validateCredentials(){
         if emailTextField.text == "a" && passwordTextField.text == "a" {
             print("bingo")
-            // performSegueWithIdentifier("loginSegue", sender: nil)
+            performSegueWithIdentifier("loginSegue", sender: nil)
             
         } else {
             print("invalid credentials")

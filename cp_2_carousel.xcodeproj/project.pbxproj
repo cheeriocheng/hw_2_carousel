@@ -17,6 +17,7 @@
 		DC2359D81BEA8595004D57E6 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2359D71BEA8595004D57E6 /* Common.swift */; };
 		DC2359DD1BEA92AB004D57E6 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2359DC1BEA92AB004D57E6 /* IntroViewController.swift */; };
 		DCD0BA691BEB12290052F02B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0BA681BEB12290052F02B /* LoginViewController.swift */; };
+		DCEA45871BEB3B2E009D0B15 /* welcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA45861BEB3B2E009D0B15 /* welcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		DC2359D71BEA8595004D57E6 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = ../Common.swift; sourceTree = "<group>"; };
 		DC2359DC1BEA92AB004D57E6 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		DCD0BA681BEB12290052F02B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
+		DCEA45861BEB3B2E009D0B15 /* welcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = welcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			children = (
 				DCD0BA681BEB12290052F02B /* LoginViewController.swift */,
 				DC2359DC1BEA92AB004D57E6 /* IntroViewController.swift */,
+				DCEA45861BEB3B2E009D0B15 /* welcomeViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				DC2359AC1BEA827D004D57E6 /* ViewController.swift in Sources */,
 				DC2359D81BEA8595004D57E6 /* Common.swift in Sources */,
 				DC2359AA1BEA827D004D57E6 /* AppDelegate.swift in Sources */,
+				DCEA45871BEB3B2E009D0B15 /* welcomeViewController.swift in Sources */,
 				DCD0BA691BEB12290052F02B /* LoginViewController.swift in Sources */,
 				DC2359DD1BEA92AB004D57E6 /* IntroViewController.swift in Sources */,
 			);
