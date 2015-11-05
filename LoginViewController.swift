@@ -11,18 +11,39 @@ import UIKit
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
         scrollView.contentSize = CGSize(width: 320, height: 600)
-
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
+        
+        
         // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func onTap(sender: AnyObject) {
+        view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func keyboardWillShow(notification: NSNotification!) {
+        
+    }
+    
+    func keyboardWillHide(notification: NSNotification!) {
+        
+    }
+
+    
+   
     
 
     /*
