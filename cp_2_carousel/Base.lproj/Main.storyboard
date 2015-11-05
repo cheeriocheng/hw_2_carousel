@@ -124,7 +124,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" id="jXb-Md-Z00" userLabel="buttonParentView">
-                                        <rect key="frame" x="0.0" y="324" width="320" height="155"/>
+                                        <rect key="frame" x="0.0" y="337" width="320" height="155"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sign_in_buttons" id="XKl-cb-NdE">
@@ -148,10 +148,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="qD7-JR-df0"/>
+                    <connections>
+                        <outlet property="scrollView" destination="7cM-jH-bjR" id="tM4-ba-orD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wUP-GL-dt6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-80" y="501"/>
+            <point key="canvasLocation" x="-116" y="521"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eft-yd-DTD">
