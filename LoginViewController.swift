@@ -90,14 +90,14 @@ class LoginViewController: UIViewController {
     }
     
     func validateCredentials(){
-        if emailTextField.text == "tim" && passwordTextField.text == "password" {
+        if emailTextField.text == "a" && passwordTextField.text == "a" {
             print("bingo")
             // performSegueWithIdentifier("loginSegue", sender: nil)
             
         } else {
             print("invalid credentials")
             
-            let alert = UIAlertController(title: "Oops", message: "Wrong password sucka", preferredStyle: UIAlertControllerStyle.Alert)
+            let alert = UIAlertController(title: "Try again", message: "Your user name and passoword\nare not matching.\n username: a\n password: a", preferredStyle: UIAlertControllerStyle.Alert)
             
             let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { (UIAlertAction) -> Void in
                 print("User tapped OK")
