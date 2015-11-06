@@ -11,6 +11,7 @@ import UIKit
 class welcomeViewController: UIViewController,UIScrollViewDelegate {
 
 
+    @IBOutlet weak var carouselButton: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
 
@@ -19,18 +20,13 @@ class welcomeViewController: UIViewController,UIScrollViewDelegate {
         scrollView.contentSize = CGSize(width: 1280, height: 568)
         
         scrollView.delegate = self
-        
+
+        //hide the button
+        carouselButton.alpha = 0
 
     }
     
-    
 
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         // Get the current page based on the scroll offset
         let page : Int = Int(round(scrollView.contentOffset.x / 320))
@@ -38,8 +34,18 @@ class welcomeViewController: UIViewController,UIScrollViewDelegate {
         // Set the current page, so the dots will update
         pageControl.currentPage = page
      //   print(page)
+        
+        if(page == 3){
+            carouselButton.alpha = 1
+        }else {
+            carouselButton.alpha = 0
+        }
     }
 
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
 
     /*
     // MARK: - Navigation
