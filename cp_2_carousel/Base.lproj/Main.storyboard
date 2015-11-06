@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="LsZ-bQ-JHN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="b2a-6j-lfW">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
@@ -140,7 +140,6 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <action selector="onLogInButtonPressed:" destination="s89-iM-YU3" eventType="touchUpInside" id="FwH-I5-ycu"/>
-                                                    <segue destination="EKa-95-qcM" kind="modal" identifier="loginSegue" id="rjO-73-ZR7"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -171,6 +170,7 @@
                         <outlet property="logInButton" destination="s2o-nY-fjd" id="GNS-Ga-Dp1"/>
                         <outlet property="passwordTextField" destination="8ww-hF-3Hm" id="boX-SC-IOL"/>
                         <outlet property="scrollView" destination="7cM-jH-bjR" id="tM4-ba-orD"/>
+                        <segue destination="EKa-95-qcM" kind="modal" identifier="loginSegue" id="URO-9Q-xoa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wUP-GL-dt6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -180,7 +180,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-116" y="521"/>
+            <point key="canvasLocation" x="-63" y="481"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="xJD-Se-stf">
@@ -230,6 +230,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <navigationItem key="navigationItem" id="qb6-2M-hdv"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1280" height="568"/>
                     <connections>
@@ -239,7 +240,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vvT-iG-JGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="804" y="237"/>
+            <point key="canvasLocation" x="812" y="197"/>
         </scene>
         <!--Timeline View Controller-->
         <scene sceneID="DTz-Mq-eQl">
