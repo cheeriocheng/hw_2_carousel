@@ -8,7 +8,7 @@
 
 import UIKit
 
-class welcomeViewController: UIViewController {
+class welcomeViewController: UIViewController,UIScrollViewDelegate {
 
 
     @IBOutlet weak var scrollView: UIScrollView!
@@ -18,25 +18,28 @@ class welcomeViewController: UIViewController {
         super.viewDidLoad()
         scrollView.contentSize = CGSize(width: 1280, height: 568)
         
+        scrollView.delegate = self
+        
 
     }
+    
+    
 
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-//    
-//    func scrollViewDidEndDecelerating(scrollView: UIScrollView!) {
-//        // Get the current page based on the scroll offset
-//        let page : Int = Int(round(scrollView.contentOffset.x / 320))
-//        
-//        // Set the current page, so the dots will update
-//        pageControl.currentPage = page
-//        print(page)
-//    }
-//
-//    
+    
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        // Get the current page based on the scroll offset
+        let page : Int = Int(round(scrollView.contentOffset.x / 320))
+        
+        // Set the current page, so the dots will update
+        pageControl.currentPage = page
+     //   print(page)
+    }
+
 
     /*
     // MARK: - Navigation
